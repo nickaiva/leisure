@@ -1,7 +1,7 @@
 /*Web design with HTML 5\chapter7\flexbox7 page 338*/
 * {
     box-sizing: border-box;/*The box size border remains constant by altering the content size*/
-    border: 3px  solid coral;
+    /*border: 3px  solid coral;*/
  
 
    }
