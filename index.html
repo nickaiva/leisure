@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
     <style>
-            @import url('css/theme.css');
+            @import url('css/flexbox.css');
     </style>
-    <!---link rel='stylesheet' type="text/css" href="css/theme.css" /-->
+    <!--link rel='stylesheet' type="text/css" href="css/flexbox.css" /-->
     <script lang="Javascript" type="text/javascript">
     function showHide(id){
         if(!document.getElementById) return;
@@ -20,7 +20,7 @@
                  allSections[i].style.display = "none";
              }/*Show only the selected*/
             section.style.display = "block";
-        } else {/*Necessary due to empty pages appearing*/
+        } else {/*Necessary due to empty pages appearing when set="none"*/
             section.style.display = "block";
         }
        
@@ -44,7 +44,7 @@
             </nav>
             <h1>Welcome to our leisure advisor page!</h1>
 
-        </header>
+    </header>
     <section id='Travelling'>
         <div id='wrapper'>
             <!-- start of flex container -->
@@ -59,7 +59,7 @@
             </nav>
             <main id='Trips'>
                 <h2>Our trip counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
-
+                
                 <h3>Tips for singles or divorced</h3>
                 <p>This is our first tip: in case you are in search of your next love affair, please consider well
                     visited or crowded, but quiet places,
@@ -68,6 +68,10 @@
                 <h3>Tips for pairs and young parents</h3>
                 <p>This is another tip for the active lovers: please select a discreet place for your accomodation and
                     keep it quiet, or just let the music play too!</p>
+                    <figure>
+                        <img src='images/disneyland.jpg' alt='disneyland offers great possibilities for all ages'>
+                        <figcaption>Disneyland in Paris offers great possibilities for all ages</figcaption>
+                    </figure>
                 <h3>Tips for single parent or small families</h3>
                 <p>This is another tip:cost cutting values most for single parent families.Therefore it is recommended
                     to search our ratings page
@@ -85,10 +89,7 @@
                     will be long, depending on the season of the year and local weather. Please avoid isolated places
                     with limited access to pharmacies and physicians.
                 </p>
-                <figure>
-                    <img src='images/disneyland.jpg' alt='disneyland offers great possibilities for all ages'>
-                    <figcaption>Disneyland in Paris offers great possibilities for all ages</figcaption>
-                </figure>
+               
             </main>
             <div id='rightside'>
                 <h2>Special tips for specific guest groups!</h2>
@@ -150,6 +151,10 @@
                     Dr Matthew Forsyth, urologist and keen cyclist from Portland, Oregon, commented: “All these muscles
                     [worked on the bike] are used during intercourse.
                     The better developed these muscles, the longer and more athletic intercourse will be.”</p>
+                    <figure>
+                        <img src='images/biking.jpg' alt='Biking in the land is a healthy passtime for all ages'/>
+                        <figcaption>Biking in the land is a healthy passtime for all ages</figcaption>
+                    </figure>
                 <h3>Tips for single parent or small families</h3>
                 <p>This is another tip:cost cutting values most for single parent families.Therefore it is recommended
                     to search our ratings page
@@ -167,10 +172,7 @@
                     will be long, depending on the season of the year and local weather. Please avoid isolated places
                     with limited access to pharmacies and physicians.
                 </p>
-                <figure>
-                    <img src='images/biking.jpg' alt='Biking in the land is a healthy passtime for all ages'/>
-                    <figcaption>Biking in the land is a healthy passtime for all ages</figcaption>
-                </figure>
+               
             </main>
 
             <div id='rightside'>
@@ -200,7 +202,7 @@
                 </p>
                 <img src="images/wander.jpeg" alt="wander"/>
                 <h4>Tips for the wanderer</h4>
-                <p>Wanderering in the nature is a excellent alternative, but only when the weather is good.
+                <p>Wandering in the nature is a excellent alternative, but only when the weather is good.
                     Always pay attention to avalanches when on a mount.
                     Please check beforehand with your favorite way or app, whether the venue mentioned is really
                     accessible for the inexperienced wanderer as well!</p>
@@ -234,6 +236,10 @@
                 <h3>Tips for pairs and young parents</h3>
                 <p>This is another tip for the active lovers: please select a discreet place for your accomodation and
                     keep it quiet, or let the music play!</p>
+                    <figure>
+                        <img src='images/swimming.jpg' alt='Swimming in the pool is a healthy passtime for all ages'/>
+                        <figcaption>Swimming in the pool is a healthy passtime for all ages</figcaption>
+                    </figure>
                 <h3>Tips for single parent or small families</h3>
                 <p>This is another tip:cost cutting values most for single parent families.Therefore it is recommended
                     to search our ratings page
@@ -265,10 +271,7 @@
                     lifeguards stationed.
                     If you're careful and have people watching out for you, this should hopefully not be much of a risk.
                 </p>
-                <figure>
-                    <img src='images/swimming.jpg' alt='Swimming in the pool is a healthy passtime for all ages'/>
-                    <figcaption>Swimming in the pool is a healthy passtime for all ages</figcaption>
-                </figure>
+               
             </main>
 
             <div id='rightside'>
@@ -333,6 +336,10 @@
                     time).
                     It’s more fun. I love cooking alone, but turn on some music, give me a glass of wine, and put my
                     husband by my side — that’s what I call cooking!</p>
+                    <figure>
+                        <img src='images/cooking.jpeg' alt='Cooking as a Couple'>
+                        <figcaption>Cooking as a Couple is a funny passtime for all ages</figcaption>
+                    </figure>
                 <h3>Tips for single parent or small families</h3>
                 <p>This is another tip:cost cutting values most for single parent families.Therefore it is recommended
                     to search our ratings page
@@ -350,15 +357,12 @@
                     will be long, depending on the season of the year and local weather. Please avoid isolated places
                     with limited access to pharmacies and physicians.
                 </p>
-                <figure>
-                    <img src='images/cooking.jpeg' alt='Cooking as a Couple'>
-                    <figcaption>Cooking as a Couple is a funny passtime for all ages</figcaption>
-                </figure>
+               
             </main>
 
             <div id='rightside'>
                 <h2>Cooking or dining out?</h2>
-                <img src="images/dishes.jpeg" alt="dishes" />
+                <img src="images/dish.png" alt="dishes" />
                 <h4>Tips for homemade meals</h4>
                 <p>
                     According to dietitian Ben Atkinson, who manages Harborview Medical Center’s outpatient nutrition,
@@ -411,6 +415,10 @@
                 <h3>Tips for pairs and young parents</h3>
                 <p>This is another tip for the active lovers: please select a discreet place for your accomodation and
                     keep it quiet, or let the music play!</p>
+                    <figure>
+                        <img src='images/repair.jpeg' alt='Handycrafting  is a creative passtime for all ages'>
+                        <figcaption>Handycrafting is a creative hobby for all ages</figcaption>
+                    </figure>
                 <h3>Tips for single parent or small families</h3>
                 <p>This is another tip:cost cutting values most for single parent families.Therefore it is recommended
                     to search our ratings page
@@ -428,10 +436,7 @@
                     will be long, depending on the season of the year and local weather. Please avoid isolated places
                     with limited access to pharmacies and physicians.
                 </p>
-                <figure>
-                    <img src='images/repair.jpeg' alt='Handycrafting  is a creative passtime for all ages'>
-                    <figcaption>Handycrafting is a creative hobby for all ages</figcaption>
-                </figure>
+               
             </main>
 
             <div id='rightside'>
@@ -493,7 +498,7 @@
                 </p>
                 </fieldset>
                 </legend>
-                <a href="sms:306946878099">Alternatively send a short text message, sms to us.</a>
+                <a href="sms://+306946878099">Alternatively send a short text message, sms to us.</a>
                 </p>
 
 
@@ -502,7 +507,7 @@
                 <img src="images/letter.jpeg" alt="Feedback" />
                 <h4>Thanks for taking the time to send us your valuable feedback!</h4>
                 <p>Please help us to improve and be as specific as possible with regards to the subject.
-                    In case of an error or misspelling report also the section or article mentioned.
+                    In case of an error or misspelling, do report also the section or article mentioned.
                 </p>
 
             </div>
