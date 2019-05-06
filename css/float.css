@@ -1,0 +1,182 @@
+header, nav, main, #rightside, footer { 
+    display: block; 
+}
+
+*{
+    box-sizing:border-box;
+    
+} 
+body { margin:0;
+    background-color: #ffffff; 
+}
+#wrapper{
+    background-color: #eeeeee;
+    color: #006600;
+    min-width: 960px;
+    font-family: Verdana, Arial, sans-serif;
+}
+header {
+    background-color: #636631;
+    background-image: url(../images/disneyland.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 120px;
+    color: #cc66cc;
+    text-align: right;
+    padding: 0 20px;
+    border-bottom: 2px solid #000000;
+ }
+header a {font-size: 0.80em; }
+header a:link, header a:visited { color: #ffffff; }
+header a:focus, header a:hover { color: #eeeeee; }
+h1 { 
+    margin-top: 0;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000; 
+}
+
+#navleft {
+    float: left;
+    width: 150px;
+}
+
+#navleft ul {
+     margin-top: 20px;
+     list-style-type: none;
+ }
+ /*See exercise 11.6 for reference on nav and menus. Code orignates from flexbox.css*/
+#navtop  {
+    background-color: lemonchiffon;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center; 
+    padding-right: 2em;
+    flex-wrap:wrap;/*use multiple lines*/
+
+}
+
+#navtop ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    padding-left: 0;
+}
+/*Hide due to drop down menu*/
+#navtop  ul ul {
+    position: absolute;
+    background-color: lemonchiffon;
+    padding: 0;
+    text-align: left;
+    display: none;
+}
+
+#navtop  ul ul li {
+    border: 1px solid teal;
+    display: block;/*occupy full width*/
+    width: 13em;
+    padding-left: 1em;
+    margin-left: 0; 
+
+}
+
+#navtop li { 
+    padding: 0.5em;
+    display: inline-block;/*allows to set a width and height on the element, does not add a line-break after, so it can sit next to other elements.*/
+}        
+#navtop  li:hover ul { 
+    display: block; 
+} 
+
+nav a {
+     text-decoration: none;
+    font-size: 1.2em;
+}
+nav a:link { color:#006600;}
+nav a:visited { color: #003300; }
+nav a:focus, nav a:hover { color: #cc66cc; }
+nav a:active { color: #000000;}
+
+main {
+     margin: 0 210px 0 160px;
+    padding: 1px 10px 20px 10px;
+    background-color: #ffffff;
+    color: #006600;
+}
+main p { margin: 20px; }
+main h2, main h3 { 
+    color: #cc66cc;
+    background-color: #ffffff; }
+#rightside {
+        margin:0;
+        padding: 0;
+        float: right;
+        width: 200px;
+        border: 3px  solid coral;
+        
+    }
+#rightside p {
+        font-size: 0.80em;
+        margin: 10px;
+    }
+
+#rightside h4,#rightside h2 { 
+    padding-bottom: 2px;
+            border-bottom: 1px solid #000000;
+            margin: 10px;
+            font-size: 0.90em;
+            color: #cc66cc;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15%;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption {
+    padding: 5%;       
+    text-align: center;
+} 
+/*Support HTML5 elements in older browsers*/
+header,
+main,
+nav,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+.menuimg{
+    flex-wrap:wrap;
+    max-width:225px;
+    height:168px;
+}
+.menuimg:hover{
+    transition :all .8s ease-in-out;
+    transform :scale(1.02);
+    opacity:0.25;
+}
+#home ul { 
+    list-style-type: none;
+}
+#home li { 
+    display: inline-block;
+    width: 250px;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+footer { 
+    font-size: .70em;
+    text-align: center;
+    color: #006600;
+    background-color: #ffffff;
+    padding-top: 10px;
+    clear: both;
+ }
