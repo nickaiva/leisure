@@ -50,7 +50,7 @@ h2,h3,h4,h5{
     
 /*flex space distribution*/
 navleft { flex: 1; }
-main { flex: 7; }
+article { flex: 7; }
 #rightside { flex: 2;}
 
 
@@ -211,7 +211,7 @@ figcaption {
 
 #rightside img:hover {
     transition :all .8s ease-in-out;
-    transform :scale(1.5);
+    transform :scale(1.05);
    
 }
 
