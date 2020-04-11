@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
-    <title>Welcome to our leisure advisor page!</title>
+    <title>Welcome to our leisure page!</title>
     <meta charset="utf-8">
-    <meta name="description" content="Online leisure advice">
-    <meta name="keywords" content="HTML,CSS,responsive, flex,JavaScript">
-    <meta name="author" content="Nick Aiva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
     <style>
         @import url('css/flexbox.css');
     </style>
     <!--link rel='stylesheet' type="text/css" href="css/flexbox.css" /-->
-        <script lang="Javascript" type="text/javascript">
+        <script  type="text/javascript">
         function showHide(id) {/*Navigate to each section as clicked*/
             if (!document.getElementById) return;
             var section = document.getElementById(id);
@@ -44,9 +41,10 @@
                 <li><a href="#About" id="about" onClick="showHide('About');">About</a></li>
             </ul>
         </nav>
-        <h1>Welcome to our leisure advisor page!</h1>
+        <h1>Welcome to our cinema advisor page!</h1>
 
     </header>
+    <main>
     <section id='Travelling'>
         <div id='wrapper'>
             <!-- start of flex container -->
@@ -59,7 +57,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='Trips'>
+            <article id='Trips'>
                 <h2>Our trip counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
 
                 <h3>Tips for singles or divorced</h3>
@@ -92,7 +90,7 @@
                     with limited access to pharmacies and physicians.
                 </p>
 
-            </main>
+            </article>
             <div id='rightside'>
                 <h2>Special tips for specific guest groups!</h2>
                 <img src="images/breastfeeding.jpeg" alt="Nursing" />
@@ -130,7 +128,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='leisure'>
+            <article id='leisure'>
                 <h2>Our leisure counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
                 <h3>Tips for singles or divorced</h3>
                 <p>Many of the upshots we discuss when we talk about the benefits of cycling are exercise related.
@@ -179,7 +177,7 @@
                     with limited access to pharmacies and physicians.
                 </p>
 
-            </main>
+            </article>
 
             <div id='rightside'>
                 <h2>Recommended outdoor activities</h2>
@@ -227,7 +225,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='sport'>
+            <article id='sport'>
                 <h2>Our sport counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
                 <h3>Tips for all</h3>
                 <p>Depending on age and stamina, choosing a sport is a matter of taste and weather. However swimming is
@@ -278,7 +276,7 @@
                     If you're careful and have people watching out for you, this should hopefully not be much of a risk.
                 </p>
 
-            </main>
+            </article>
 
             <div id='rightside'>
                 <h2>Our expert tips for socializing with new people, safe burning of calories, training and amusing
@@ -316,7 +314,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='cooking'>
+            <article id='cooking'>
                 <h2>Our Cooking counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
                 <h3><a href="https://www.acouplecooks.com/cooking-couple/">Cooking as a Couple </a></h3>
                 <p>Despite what some people may say, cooking is hard. It’s difficult to learn, involves lots of trial
@@ -365,7 +363,7 @@
                     with limited access to pharmacies and physicians.
                 </p>
 
-            </main>
+            </article>
 
             <div id='rightside'>
                 <h2>Cooking or dining out?</h2>
@@ -402,7 +400,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='handycrafts'>
+            <article id='handycrafts'>
                 <h2>Our handycrafts counselor will guide you how to best enjoy yourself and amuse your beloved ones</h2>
                 <h3>Tips for singles or divorced</h3>
                 <p> Έλα στο καινοτόμο εργαστήριο μάθησης, πειραματισμού και δημιουργίας για όλους
@@ -444,7 +442,7 @@
                     with limited access to pharmacies and physicians.
                 </p>
 
-            </main>
+            </article>
 
             <div id='rightside'>
                 <h2>Still waiting for the technician to do the repairs?</h2>
@@ -486,31 +484,30 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='feedback'>
+            <article id='feedback'>
                 <h2>Our staff cannot wait hearing from you!</h2>
 
-                <h3>Please use the form below to contact us via email.</h3>
-                <p>
-                    <legend>
+                 
+                    <legend>Please use the form below to contact us via email. </legend>
                         <fieldset>
                             <form action="mailto:nickaiva@yahoo.gr?subject=issue" method="POST">
                                 <p><label>Enter your subject:</label></p>
 
                                 <p><input name="issue" type="text" placeholder="Enter a specific subject" required></p>
                                 <p><label>Enter your feedback:</label></p>
-                                <p><textarea name="feedback" cols="" rows="10" placeholder="Say something nice!"
+                                <p><textarea name="feedback" rows="10" placeholder="Say something nice!"
                                         required></textarea></p>
                                 <p><button type="reset">Reset</button>
-                                    <button type="submit">Send</button>
+                                    <button type="submit">Send</button></p>
                             </form>
-                </p>
+                
                 </fieldset>
-                </legend>
+                
                 <a href="sms://+306946878099">Alternatively send a short text message, via sms to us.</a>
                 </p>
 
 
-            </main>
+            </article>
             <div id='rightside'>
                 <img src="images/letter.jpeg" alt="Feedback" />
                 <h4>Thanks for taking the time to send us your valuable feedback!</h4>
@@ -534,13 +531,13 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='about'>
+            <article id='about'>
                 <h2>Our staff gets introduced to you!</h2>
                 <h3>This is our famous founder</h3>
                 <p>
                     These are our valuable partners
                 </p>
-            </main>
+            </article>
             <div id='rightside'>
                 <!--img src="images/letter.jpeg" alt="coin" /-->
                 <h4>Thanks for visiting our site!</h4>
@@ -563,7 +560,7 @@
                     <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                 </ul>
             </nav>
-            <main id='home'>
+            <article id='home'>
                 <h2>Our home page introduces you to all our contents!</h2>
                 <h3>Please click on an image to navigate to the relevant article...</h3>
                 <ul>
@@ -587,7 +584,7 @@
                             <span>Handycrafts</span></a></li>
                 </ul>
 
-            </main>
+            </article>
             <div id='rightside'>
                 <h2>Our latest news and announcements!</h2>
                 <img src="images/arts.png" alt="arts" />
@@ -620,12 +617,11 @@
                         <li><a href="#Handycrafts" onClick="showHide('Handycrafts');">Handycrafts</a></li>
                     </ul>
                 </nav>
-                <main id='rate'>
+                <article id='rate'>
                     <h2>Our staff cannot wait hearing from you!</h2>
     
-                    <h3>Please use the form below to rate our content via email.</h3>
-                    <p>
-                        <legend>
+                 
+                        <legend>>Please use the form below to rate our content via email.</legend>
                             <fieldset>
                                 <form action="mailto:nickaiva@yahoo.gr?subject=issue" method="POST">
                                     <p><label>Enter your subject:</label></p>
@@ -646,21 +642,21 @@
                                     <p><label>Enter your Email:</label></p>
                                     <p> <input type="email" required></p>
                                     <p><label>Rate the quality of our content:</label></p>
-                                    <p><input type='range' min="0" max='10' name="rating"></p>
+                                    <p><input type='range' min="0" max="10" name="rating"></p>
                                     <p><label>Enter your feedback:</label></p>
-                                    <p><textarea name="feedback" cols="" rows="10" placeholder="Say something nice!"
+                                    <p><textarea name="feedback"  rows="10" placeholder="Say something nice!"
                                             required></textarea></p>
                                     <p><button type="reset">Reset</button>
                                         <button type="submit">Send</button></p>
                                 </form>
-                    </p>
+                    
                     </fieldset>
-                    </legend>
-                    <a href="sms://+306946878099">Alternatively send a short text message, via sms to us.</a>
+                    
+                    <a href="sms://+3069999999">Alternatively send a short text message, via sms to us.</a>
                     </p>
     
     
-                </main>
+                </article>
                 <div id='rightside'>
                     <img src="images/letter.jpeg" alt="Feedback" />
                     <h4>Thanks for taking the time to send us your valuable feedback!</h4>
@@ -671,6 +667,7 @@
                 </div>
             </div><!-- end of flex container -->
         </section>
+    </main>
     <footer>
         <h5>Disclaimer info and copyright 2019</h5>
     </footer>
